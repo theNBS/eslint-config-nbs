@@ -62,6 +62,7 @@ module.exports = {
     "no-undef": "off",
     "no-underscore-dangle": "warn",
     "no-unused-expressions": "warn",
+    "no-unused-vars": "off",
     "no-useless-constructor": "off",
     "no-useless-escape": "warn",
     "no-useless-return": "warn",
