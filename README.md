@@ -9,5 +9,5 @@ This package extends eslint-config-airbnb-base and adds NBS' rules to give an .e
 Install with npm:
 
 ```sh
-npm info "eslint-config-airbnb-base@latest" peerDependencies
+npm install eslint-config-nbs --savedev
 ```
