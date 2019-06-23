@@ -7,6 +7,7 @@ module.exports = {
   rules: {
     "arrow-body-style": "off",
     "arrow-parens": "off",
+    "camelcase": "warn",
     "class-methods-use-this": "off",
     "comma-dangle": "warn",
     "comma-spacing": "warn",
@@ -63,6 +64,7 @@ module.exports = {
     "no-underscore-dangle": "warn",
     "no-unused-expressions": "warn",
     "no-unused-vars": "off",
+    "no-use-before-define": "warn",
     "no-useless-constructor": "off",
     "no-useless-escape": "warn",
     "no-useless-return": "warn",
