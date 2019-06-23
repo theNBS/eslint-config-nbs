@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-nbs",
+  "version": "1.0.0",
+  "description": "NBS ESLint recommended settings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theNBS/eslint-config-nbs.git"
+  },
+  "keywords": [
+    "ESLint"
+  ],
+  "author": "NBS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theNBS/eslint-config-nbs/issues"
+  },
+  "homepage": "https://github.com/theNBS/eslint-config-nbs#readme",
+  "peerDependencies": {
+    "eslint": ">= 3"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
+  }
+}
