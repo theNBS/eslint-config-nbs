@@ -1,10 +1,8 @@
 module.exports = {
-  "extends": [
-    "./node_modules/eslint-config-airbnb-base/.eslintrc"
-  ],
+  extends: "airbnb",
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: "module",
   },
   rules: {
     "arrow-body-style": "off",
