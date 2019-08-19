@@ -98,11 +98,9 @@ module.exports = {
     "@typescript-eslint/no-inferrable-types": "warn",
     "@typescript-eslint/no-namespace": "warn",
     "@typescript-eslint/no-non-null-assertion": "off",
-    "@typescript-eslint/no-object-literal-type-assertion": "warn",
     "@typescript-eslint/no-parameter-properties": "off",
     "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/no-use-before-define": "warn",
-    "@typescript-eslint/prefer-interface": "warn",
     "@typescript-eslint/type-annotation-spacing": "warn",
     "@typescript-eslint/no-floating-promises": "error",
   }
