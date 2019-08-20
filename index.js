@@ -103,5 +103,9 @@ module.exports = {
     "@typescript-eslint/no-use-before-define": "warn",
     "@typescript-eslint/type-annotation-spacing": "warn",
     "@typescript-eslint/no-floating-promises": "error",
+    // Warning until fixed eslint/tslint plugin - https://github.com/typescript-eslint/typescript-eslint/pull/796
+    "@typescript-eslint/no-floating-promises": ["warn"],
+    "@typescript-eslint/consistent-type-assertions": ["error", { assertionStyle: 'as', objectLiteralTypeAssertions: 'allow' }],
+    "@typescript-eslint/ban-ts-ignore": "off"
   }
 };
