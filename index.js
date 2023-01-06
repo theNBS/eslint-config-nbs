@@ -188,15 +188,6 @@ module.exports = {
           "error",
           { "allowAllPropertiesOnSameLine": true }
         ],
-        "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
-        "padding-line-between-statements": [
-          "error",
-          { "blankLine": "always", "prev": "*", "next": "return" },
-          { "blankLine": "always", "prev": ["if", "do", "while", "try", "switch"], "next": "*" },
-          { "blankLine": "always", "prev": "*", "next": ["if", "do", "while", "try", "switch"] },
-          { "blankLine": "always", "prev": "import", "next": "*"},
-          { "blankLine": "any",    "prev": "import", "next": "import"}
-        ],
         "semi": [
           "error",
           "always"

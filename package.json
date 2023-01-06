@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nbs",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "NBS ESLint recommended settings",
   "main": "index.js",
   "scripts": {
