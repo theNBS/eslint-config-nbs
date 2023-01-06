@@ -23,12 +23,18 @@ module.exports = {
         "*.ts"
       ],
       rules: {
-        "@typescript-eslint/naming-convention": [ "error", { "selector": "enumMember", "format": ["PascalCase"] } ],
+        "no-underscore-dangle": "off",
+        "no-useless-escape": "off",
+        "max-len": "off",
+        "@typescript-eslint/adjacent-overload-signatures": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/naming-convention": "off",
+        "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/no-empty-function": "error",
         "@typescript-eslint/no-floating-promises": "error",
         "@typescript-eslint/no-require-imports": "error",
         "@typescript-eslint/no-unnecessary-boolean-literal-compare": "off",
-        "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/no-use-before-define": "error",
         "@typescript-eslint/no-var-requires": "error",
         "@typescript-eslint/strict-boolean-expressions": "off",
@@ -138,7 +144,7 @@ module.exports = {
         ],
         "key-spacing": [
           "error",
-          { "beforeColon": false, "afterColon": true }
+          { "beforeColon": false, "afterColon": true, "mode": "minimum" }
         ],
         "keyword-spacing": [
           "error",
@@ -148,17 +154,12 @@ module.exports = {
           "error",
           "unix"
         ],
-        "max-len": [
-          "error",
-          { "code": 180 }
-        ],
         "new-parens": ["error", "always"],
         "no-duplicate-imports": "error",
         "no-empty": "error",
         "no-param-reassign": "error",
         "no-redeclare": "error",
         "no-trailing-spaces": "error",
-        "no-underscore-dangle": ["error", { "allowAfterThis": true }],
         "no-whitespace-before-property": "error",
         "nonblock-statement-body-position": [
           "error",
