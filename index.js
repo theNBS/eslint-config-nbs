@@ -162,7 +162,6 @@ module.exports = {
           { "code": 180 }
         ],
         "new-parens": ["error", "always"],
-        "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
         "no-duplicate-imports": "error",
         "no-empty": "error",
         "no-multi-spaces": [
