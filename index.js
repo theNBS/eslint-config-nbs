@@ -98,10 +98,6 @@ module.exports = {
           "error",
           "always"
         ],
-        "brace-style": [
-          "error",
-          "1tbs"
-        ],
         "comma-dangle": [
           "error",
           "always-multiline"
@@ -152,11 +148,6 @@ module.exports = {
           "error",
           "unix"
         ],
-        "lines-between-class-members": [
-          "error",
-          "always",
-          { "exceptAfterSingleLine": true }
-        ],
         "max-len": [
           "error",
           { "code": 180 }
@@ -164,10 +155,6 @@ module.exports = {
         "new-parens": ["error", "always"],
         "no-duplicate-imports": "error",
         "no-empty": "error",
-        "no-multi-spaces": [
-          "error",
-          { "ignoreEOLComments": true }
-        ],
         "no-param-reassign": "error",
         "no-redeclare": "error",
         "no-trailing-spaces": "error",
