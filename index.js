@@ -52,7 +52,7 @@ module.exports = {
               "private-instance-field",
               "public-abstract-field",
               "protected-abstract-field",
-              "private-abstract-field",
+              "abstract-field",
               "public-static-method",
               "protected-static-method",
               "public-static-get",
