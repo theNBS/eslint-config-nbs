@@ -8,7 +8,6 @@ module.exports = {
     "@typescript-eslint",
     "eslint-plugin-import",
     "eslint-plugin-jsdoc",
-    "eslint-plugin-prefer-arrow",
   ],
   env: {
     node: true
