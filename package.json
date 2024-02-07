@@ -3,6 +3,11 @@
   "version": "2.2.0",
   "description": "NBS ESLint recommended settings",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./typescript": "./rules/typescript.js",
+    "./jasmine": "./rules/jasmine.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
