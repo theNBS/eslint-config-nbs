@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nbs",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "NBS ESLint recommended settings",
   "main": "index.js",
   "exports": {
@@ -16,7 +16,10 @@
     "url": "git+https://github.com/theNBS/eslint-config-nbs.git"
   },
   "keywords": [
-    "ESLint"
+    "ESLint",
+    "eslintconfig",
+    "NBS",
+    "theNBS"
   ],
   "author": "NBS",
   "license": "MIT",
