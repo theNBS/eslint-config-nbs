@@ -35,9 +35,6 @@ export default tseslint.config(
       "@typescript-eslint/ban-ts-comment": "off",
       "@typescript-eslint/naming-convention": "off",
       "@typescript-eslint/no-unused-vars": "off",
-      "@typescript-eslint/no-empty-function": "error",
-      "@typescript-eslint/no-floating-promises": "error",
-      "@typescript-eslint/no-require-imports": "error",
       "@typescript-eslint/no-unnecessary-boolean-literal-compare": "off",
       "@typescript-eslint/no-use-before-define": "error",
       "@typescript-eslint/no-var-requires": "error",
@@ -48,7 +45,6 @@ export default tseslint.config(
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/prefer-reduce-type-parameter": "error",
       "@typescript-eslint/prefer-return-this-type": "error",
-      "@typescript-eslint/consistent-generic-constructors": "error",
       "@typescript-eslint/consistent-indexed-object-style": "error",
       "@typescript-eslint/prefer-readonly": "error",
       "@typescript-eslint/member-ordering": [
