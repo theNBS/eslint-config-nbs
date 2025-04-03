@@ -1,4 +1,4 @@
-import {tsParser} from "@typescript-eslint/parser";
+import tsParser from "@typescript-eslint/parser";
 import jsdoc from "eslint-plugin-jsdoc";
 import importPlugin from 'eslint-plugin-import';
 import js from "@eslint/js";
@@ -13,6 +13,7 @@ export default tseslint.config(
     ],
     extends: [
       eslint.configs.recommendedTypeChecked,
+      tseslint.configs.recommendedTypeChecked,
       tseslint.configs.stylisticTypeChecked,
     ],
     plugins: {
