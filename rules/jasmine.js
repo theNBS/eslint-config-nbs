@@ -6,9 +6,9 @@ import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import jasmineeslint from "eslint-plugin-jasmine";
 
-
 export default tseslint.config(
   {
+    name: "eslint-config-nbs/jasmine",
     extends: [
       eslint.configs.recommended,
       tseslint.configs.recommendedTypeChecked,

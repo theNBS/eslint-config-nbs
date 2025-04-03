@@ -8,6 +8,7 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
+    name: "eslint-config-nbs/typescript",
     files: [
       "**/*.ts"
     ],
