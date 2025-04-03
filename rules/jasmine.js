@@ -14,10 +14,6 @@ export default tseslint.config(
       tseslint.configs.recommendedTypeChecked,
       jasmineeslint.configs.recommended
     ],
-    plugins: {
-      jsdoc,
-      importPlugin
-    },
     files: ["src/**/*.spec.ts"],
     languageOptions: {
       parser: tsParser,
