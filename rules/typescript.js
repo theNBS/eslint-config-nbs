@@ -12,8 +12,7 @@ export default tseslint.config(
     ],
     extends: [
       eslint.configs.recommended,
-      tseslint.configs.recommendedTypeChecked,
-      tseslint.configs.stylisticTypeChecked,
+      tseslint.configs.recommended
     ],
     plugins: {
       'import': importPlugin,
