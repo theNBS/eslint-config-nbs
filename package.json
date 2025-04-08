@@ -1,8 +1,9 @@
 {
   "name": "eslint-config-nbs",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "NBS ESLint recommended settings",
   "main": "index.js",
+  "type": "module",
   "exports": {
     ".": "./index.js",
     "./typescript": "./rules/typescript.js",
@@ -28,15 +29,15 @@
   },
   "homepage": "https://github.com/theNBS/eslint-config-nbs#readme",
   "peerDependencies": {
-    "eslint": ">= 8"
+    "eslint": ">= 9"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.17.0",
-    "@typescript-eslint/parser": "^6.17.0",
+    "@eslint/js": "^9.23.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jasmine": "^4.1.3",
-    "eslint-plugin-jsdoc": "^48.0.2",
-    "eslint-plugin-prefer-arrow": "^1.2.3"
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "typescript-eslint": "^8.29.0",
+    "@stylistic/eslint-plugin": "^4.2.0"
   }
 }
