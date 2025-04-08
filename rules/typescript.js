@@ -55,6 +55,10 @@ export default tseslint.config(
       "@typescript-eslint/prefer-return-this-type": "error",
       "@typescript-eslint/consistent-indexed-object-style": "error",
       "@typescript-eslint/prefer-readonly": "error",
+      "@typescript-eslint/no-empty-function": "error",
+      "@typescript-eslint/no-floating-promises": "error",
+      "@typescript-eslint/no-require-imports": "error",
+      "@typescript-eslint/consistent-generic-constructors": "error",
       "@typescript-eslint/member-ordering": [
         "error",
         {
