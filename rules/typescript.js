@@ -1,10 +1,8 @@
 import tsParser from "@typescript-eslint/parser";
-import jsdoc from "eslint-plugin-jsdoc";
 import importPlugin from 'eslint-plugin-import';
-import js from "@eslint/js";
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
-
+import stylistic from '@stylistic/eslint-plugin'
 
 export default tseslint.config(
   {
@@ -13,14 +11,13 @@ export default tseslint.config(
       "**/*.ts"
     ],
     extends: [
-      eslint.configs.recommendedTypeChecked,
+      eslint.configs.recommended,
       tseslint.configs.recommendedTypeChecked,
       tseslint.configs.stylisticTypeChecked,
     ],
     plugins: {
-      js,
-      jsdoc,
-      importPlugin
+      'import': importPlugin,
+      '@stylistic': stylistic
     },
     languageOptions: {
       parser: tsParser,
@@ -32,6 +29,15 @@ export default tseslint.config(
       "no-underscore-dangle": "off",
       "no-useless-escape": "off",
       "max-len": "off",
+      "no-duplicate-imports": "error",
+      "no-empty": "error",
+      "no-param-reassign": "error",
+      "no-redeclare": "error",
+      "curly": [
+        "error",
+        "multi-line"
+      ],
+      "default-case": "error",
       "@typescript-eslint/adjacent-overload-signatures": "off",
       "@typescript-eslint/no-non-null-assertion": "off",
       "@typescript-eslint/ban-ts-comment": "off",
@@ -90,138 +96,131 @@ export default tseslint.config(
           ]
         }
       ],
-      "array-bracket-spacing": [
+      "@stylistic/array-bracket-spacing": [
         "error",
         "never"
       ],
-      "array-element-newline": [
+      "@stylistic/array-element-newline": [
         "error",
         "consistent"
       ],
-      "arrow-parens": [
+      "@stylistic/arrow-parens": [
         "error",
         "as-needed",
         { "requireForBlockBody": true }
       ],
-      "arrow-spacing": [
+      "@stylistic/arrow-spacing": [
         "error",
         { "before": true, "after": true }
       ],
-      "block-spacing": [
+      "@stylistic/block-spacing": [
         "error",
         "always"
       ],
+      "@stylistic/brace-style": "error",
       "comma-dangle": [
         "error",
         "always-multiline"
       ],
-      "comma-spacing": [
+      "@stylistic/comma-spacing": [
         "error",
         { "before": false, "after": true }
       ],
-      "comma-style": [
+      "@stylistic/comma-style": [
         "error",
         "last"
       ],
-      "computed-property-spacing": [
+      "@stylistic/computed-property-spacing": [
         "error",
         "never"
       ],
-      "curly": [
-        "error",
-        "multi-line"
-      ],
-      "default-case": "error",
-      "func-call-spacing": [
+      "@stylistic/func-call-spacing": [
         "error",
         "never"
       ],
-      "function-call-argument-newline": [ "error", "consistent" ],
-      "function-paren-newline": [ "error", "multiline-arguments" ],
+      "@stylistic/function-call-argument-newline": [ "error", "consistent" ],
+      "@stylistic/function-paren-newline": [ "error", "multiline-arguments" ],
       "import/extensions": "off",
       "import/no-unresolved": "off",
       "import/order": ["error", {"newlines-between": "ignore"}],
       "import/prefer-default-export": "off",
-      "indent": [
+      "@stylistic/indent": [
         "error",
         2,
         {
           "SwitchCase": 1
         }
       ],
-      "key-spacing": [
+      "@stylistic/key-spacing": [
         "error",
         { "beforeColon": false, "afterColon": true, "mode": "minimum" }
       ],
-      "keyword-spacing": [
+      "@stylistic/keyword-spacing": [
         "error",
         { "before": true, "after": true }
       ],
-      "linebreak-style": [
+      "@stylistic/linebreak-style": [
         "error",
         "unix"
       ],
-      "new-parens": ["error", "always"],
-      "no-duplicate-imports": "error",
-      "no-empty": "error",
-      "no-param-reassign": "error",
-      "no-redeclare": "error",
-      "no-trailing-spaces": "error",
-      "no-whitespace-before-property": "error",
-      "nonblock-statement-body-position": [
+      "@stylistic/new-parens": ["error", "always"],
+      "@stylistic/no-trailing-spaces": "error",
+      "@stylistic/no-whitespace-before-property": "error",
+      "@stylistic/nonblock-statement-body-position": [
         "error",
         "beside",
         { "overrides": { "while": "any", "do": "any" } }
       ],
-      "object-curly-newline": [
+      "@stylistic/object-curly-newline": [
         "error",
         { "multiline": true, "consistent": true }
       ],
-      "object-curly-spacing": ["error", "always"] ,
-      "object-property-newline": [
+      "@stylistic/object-curly-spacing": ["error", "always"] ,
+      "@stylistic/object-property-newline": [
         "error",
         { "allowAllPropertiesOnSameLine": true }
       ],
-      "semi": [
+      "@stylistic/semi": [
         "error",
         "always"
       ],
-      "semi-spacing": [
+      "@stylistic/semi-spacing": [
         "error",
         { "before": false, "after": true }
       ],
-      "space-before-blocks": [
+      "@stylistic/semi-style": ["error", "last"],
+      "@stylistic/space-before-blocks": [
         "error",
         "always"
       ],
-      "space-before-function-paren": [
+      "@stylistic/space-before-function-paren": [
         "error",
         {
           "anonymous": "always",
           "named": "never"
         }
       ],
-      "space-in-parens": [
+      "@stylistic/space-in-parens": [
         "error",
         "never"
       ],
-      "space-infix-ops": [
+      "@stylistic/space-infix-ops": [
         "error",
         { "int32Hint": true }
       ],
-      "space-unary-ops": [
+      "@stylistic/space-unary-ops": [
         "error",
         { "words": true, "nonwords": false }
       ],
-      "switch-colon-spacing": [
+      "@stylistic/switch-colon-spacing": [
         "error",
         { "after": true, "before": false }
       ],
-      "template-curly-spacing": [
+      "@stylistic/template-curly-spacing": [
         "error",
         "never"
       ],
-      "template-tag-spacing": [
+      "@stylistic/template-tag-spacing": [
         "error",
         "never"
       ]

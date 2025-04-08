@@ -1,9 +1,9 @@
-import tsRules from './rules/typescript';
-import jasmineRules from './rules/jasmine';
+import tsRules from './rules/typescript.js';
+import jasmineRules from './rules/jasmine.js';
 
 export const configs = {
   tsRules,
   jasmineRules,
 };
 
-export default { configs };
+export default configs;
