@@ -41,7 +41,7 @@ export default tseslint.config(
       "@typescript-eslint/no-non-null-assertion": "off",
       "@typescript-eslint/ban-ts-comment": "off",
       "@typescript-eslint/naming-convention": "off",
-      "@typescript-eslint/no-unsafe-return": "warning",
+      "@typescript-eslint/no-unsafe-return": "warn",
       "@typescript-eslint/no-unused-vars": "off",
       "@typescript-eslint/no-unnecessary-boolean-literal-compare": "off",
       "@typescript-eslint/no-use-before-define": "error",
