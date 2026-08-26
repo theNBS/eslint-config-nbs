@@ -13,6 +13,9 @@ export default tseslint.config(
       jasmineeslint.configs.recommended
     ],
     files: ["src/**/*.spec.ts"],
+    plugins: {
+      jasmine: jasmineeslint
+    },
     languageOptions: {
       parser: tsParser,
       parserOptions: {
