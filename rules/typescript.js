@@ -1,5 +1,5 @@
 import tsParser from "@typescript-eslint/parser";
-import importPlugin from 'eslint-plugin-import';
+import importPlugin from 'eslint-plugin-import-x';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin'
@@ -15,7 +15,7 @@ export default tseslint.config(
       tseslint.configs.recommended
     ],
     plugins: {
-      'import': importPlugin,
+      'import-x': importPlugin,
       '@stylistic': stylistic
     },
     languageOptions: {
@@ -47,7 +47,6 @@ export default tseslint.config(
       "@typescript-eslint/no-use-before-define": "error",
       "@typescript-eslint/no-var-requires": "error",
       "@typescript-eslint/strict-boolean-expressions": "off",
-      "@typescript-eslint/interface-name-prefix": "off",
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-module-boundary-types": "off",
       "@typescript-eslint/no-explicit-any": "off",
@@ -138,16 +137,16 @@ export default tseslint.config(
         "error",
         "never"
       ],
-      "@stylistic/func-call-spacing": [
+      "@stylistic/function-call-spacing": [
         "error",
         "never"
       ],
       "@stylistic/function-call-argument-newline": [ "error", "consistent" ],
       "@stylistic/function-paren-newline": [ "error", "multiline-arguments" ],
-      "import/extensions": "off",
-      "import/no-unresolved": "off",
-      "import/order": ["error", {"newlines-between": "ignore"}],
-      "import/prefer-default-export": "off",
+      "import-x/extensions": "off",
+      "import-x/no-unresolved": "off",
+      "import-x/order": ["error", {"newlines-between": "ignore"}],
+      "import-x/prefer-default-export": "off",
       "@stylistic/indent": [
         "error",
         2,
